@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.navbar{
+    background-color: #ffe8e6;
+}
+
+.navbar-brand img{
+    width: 40px;
+    margin-right: 8px;
+}
+
+.navbar-brand 
+ span{
+    color: #A63EC5;
+    font-weight: 900;
+    font-size: 35px;
+    font-family: 'Updock', cursive;
+ }
+.navbar-nav a.nav-link{
+    color: #CE49BF !important;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: 'Lobster', cursive;
+}
