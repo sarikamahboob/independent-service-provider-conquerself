@@ -11,15 +11,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SignUp from "./Components/Authentication/SignUp/SignUp";
 import SignIn from "./Components/Authentication/SignIn/SignIn";
 import Footer from "./Components/Home/Footer/Footer";
+import Service from "./Components/Home/Service/Service";
+import ServiceDetail from "./Components/Home/ServiceDetail/ServiceDetail";
+import { createContext, useState } from "react";
+
+export const ServiceContext = createContext();
 
 function App() {
+  const [services, setServices] = useState([]);
+
   return (
-    <div>
+    <ServiceContext.Provider value={[services, setServices]}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/service/:id" element={<ServiceDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contactus" element={<ContactUs />} />
@@ -28,7 +36,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </div>
+    </ServiceContext.Provider>
   );
 }
 

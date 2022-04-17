@@ -12,14 +12,19 @@
 
 .navbar-brand 
  span{
-    color: #A63EC5;
+    color: #B98EA7;
     font-weight: 900;
     font-size: 35px;
     font-family: 'Updock', cursive;
  }
-.navbar-nav a.nav-link{
-    color: #CE49BF !important;
+
+.navbar-nav .nav-link{
+    color: #A57982 !important;
     font-weight: 500;
     font-size: 26px;
     font-family: 'Lobster', cursive;
+}
+
+.navbar-nav .nav-link.active{
+    color: #8946A6 !important;
 }

@@ -1,0 +1,114 @@
+.form-container{
+    width: 400px;
+    margin: 60px auto;
+    height: 750px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #fff8f7;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.form-title{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    color: #A63EC5;
+    font-family: 'Lobster', cursive;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.form input, .form button, .social-login button{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form input::placeholder {
+    color: #CE49BF;
+    font-family: 'Lobster', cursive;
+}
+
+.form input {
+    background: #ecf0f3be;
+    margin-top: 18px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1b2, inset -6px -6px 6px white;
+}
+
+.form  button ,
+.social-login button{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 8px;
+    background: #CE49BF;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    font-family: 'Lobster', cursive;
+}
+
+.form  button:hover, .social-login button:hover{
+    color: #CE49BF;
+    background: #fff8f7;
+    box-shadow: none;
+}
+
+.toggle-link{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.toggle-link span{
+    font-family: 'Lobster', cursive;
+   
+}
+
+.or{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    background-color: #CE49BF;
+    height: 2px;
+    width:50%;
+}
+
+.or span{
+    margin: 0px 7px 0px 7px;
+    font-family: 'Lobster', cursive;
+    color: #A63EC5;
+}
+
+.social-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-login span{
+    margin-right: 7px;
+}
+
+.error-message{
+    font-size: 12px;
+    color: red;
+    margin:10px;
+}
+.error-message::before{
+    content: "❌ ";
+}
