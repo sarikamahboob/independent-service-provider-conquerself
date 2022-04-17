@@ -17,10 +17,16 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      {services.slice(0, 3).map((service) => (
-        <Service key={service._id} service={service}></Service>
-      ))}
-      <button onClick={() => navigate("/services")}>Show More Services</button>
+      <div className="">
+        <div className="services">
+          {services.slice(0, 3).map((service) => (
+            <Service key={service._id} service={service}></Service>
+          ))}
+        </div>
+        <button onClick={() => navigate("/services")}>
+          Show More Services
+        </button>
+      </div>
     </div>
   );
 };

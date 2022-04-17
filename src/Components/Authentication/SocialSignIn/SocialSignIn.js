@@ -6,19 +6,21 @@ import {
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import Loading from "../../Loading/Loading";
 
 const SocialSignIn = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [signInWithGoogle, googleUser, googleLoading, googleError] =
     useSignInWithGoogle(auth);
   const [signInWithGithub, githubUser, githubLoading, githubError] =
     useSignInWithGithub(auth);
   let errorElement;
+  let from = location.state?.from?.pathname || "/";
   if (googleUser || githubUser) {
-    navigate("/home");
+    navigate(from, { replace: true });
   }
   if (googleLoading || githubLoading) {
     <Loading />;

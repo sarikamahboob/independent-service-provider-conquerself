@@ -1,9 +1,10 @@
 import React from "react";
+import notfound from "../../Images/notfound.jpg";
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>Not Found</h1>
+    <div className="d-flex justify-content-center align-items-center">
+      <img style={{ width: "600px" }} src={notfound} alt="" />
     </div>
   );
 };

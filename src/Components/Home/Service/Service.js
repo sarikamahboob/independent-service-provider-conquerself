@@ -1,24 +1,32 @@
 import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import "./Service.css";
 
 const Service = ({ service }) => {
   // const [services, setServices] = useContext(ServiceContext);
-  const { _id, name, price, description, img } = service;
+  const { _id, name, price, description, image } = service;
   const navigate = useNavigate();
 
   return (
     <div>
-      <div>
+      <div className="card-container">
+        <div className="image">
+          <img src={image} alt="" fluid />
+        </div>
         <h1>{name}</h1>
-        <p>${price}</p>
+
         <p>
           {description.length < 600
             ? description.length
-            : description.slice(0, 400)}
+            : description.slice(0, 320)}
           <span onClick={() => navigate(`/service/${_id}`)}>...Read More</span>
         </p>
-        <button onClick={() => navigate(`/bookedservice/${_id}`)}>
+        <h5>Price: ${price}</h5>
+        <button
+          className="service-btn"
+          onClick={() => navigate(`/bookedservice/${_id}`)}
+        >
           Book This Service
         </button>
       </div>

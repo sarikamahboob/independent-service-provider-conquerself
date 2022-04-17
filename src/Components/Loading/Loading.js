@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div>
       <div
-        style={{ height: "200px" }}
+        style={{ height: "300px" }}
         className="w-100 d-flex justify-content-center align-items-center"
       >
         <img

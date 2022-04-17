@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "./CheckOut.css";
 
 const CheckOut = () => {
-  const handleBooking = () => {
+  const handleBooking = async () => {
     toast("Your Desire Service is Booked. Thank Your for the Booking");
   };
   return (
