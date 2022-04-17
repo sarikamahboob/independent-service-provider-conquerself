@@ -7,11 +7,13 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import SocialSignIn from "../SocialSignIn/SocialSignIn";
+import Loading from "../../Loading/Loading";
 
 const SignUp = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const navigate = useNavigate();
+  let errorElement;
 
   const handleSignUp = (event) => {
     event.preventDefault();
@@ -25,6 +27,17 @@ const SignUp = () => {
   if (user) {
     navigate(`/home`);
   }
+  if (loading) {
+    return <Loading />;
+  }
+  if (error) {
+    errorElement = (
+      <div>
+        <p className="text-danger">Error: {error.message}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="form-container">
       <h1 className="form-title">SignUp</h1>
@@ -40,6 +53,8 @@ const SignUp = () => {
         />
         <button>Sign Up</button>
       </form>
+
+      {errorElement}
 
       <p className="toggle-link">
         Already have an account ?

@@ -14,6 +14,9 @@ import Footer from "./Components/Home/Footer/Footer";
 import Service from "./Components/Home/Service/Service";
 import ServiceDetail from "./Components/Home/ServiceDetail/ServiceDetail";
 import { createContext, useState } from "react";
+import CheckOut from "./Components/Home/CheckOut/CheckOut";
+import BookedService from "./Components/Home/BookedService/BookedService";
+import RequireAuth from "./Components/Authentication/RequireAuth/RequireAuth";
 
 export const ServiceContext = createContext();
 
@@ -31,6 +34,15 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route
+          path="/checkout"
+          element={
+            <RequireAuth>
+              <CheckOut />
+            </RequireAuth>
+          }
+        />
+        <Route path="/bookedservice/:id" element={<BookedService />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="*" element={<NotFound />} />

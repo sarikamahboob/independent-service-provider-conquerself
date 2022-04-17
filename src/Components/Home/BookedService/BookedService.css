@@ -1,0 +1,39 @@
+.booked-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-name{
+    text-align: center;
+    color: #CE49BF;
+    font-family: 'Lobster', cursive;
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.checkout-button{
+    display: block;
+    width: 500px;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 40px;
+    color: white;
+    font-size: 40px;
+    padding: 8px;
+    background: #CE49BF;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    font-family: 'Lobster', cursive;
+}
+
+.checkout-button:hover{
+    color: #CE49BF;
+    background: #fff8f7;
+    box-shadow: none;
+}

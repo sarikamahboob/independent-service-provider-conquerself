@@ -60,6 +60,13 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
+                to="/checkout"
+                className={({ isActive }) => (isActive ? "active" : "nav-link")}
+              >
+                Checkout
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/signin"
                 className={({ isActive }) => (isActive ? "active" : "nav-link")}
               >

@@ -73,7 +73,7 @@
 
 .toggle-link span{
     font-family: 'Lobster', cursive;
-   
+   cursor: pointer;
 }
 
 .or{
