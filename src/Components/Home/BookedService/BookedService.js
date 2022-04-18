@@ -18,7 +18,7 @@ const BookedService = () => {
   const service = services.find((service) => service._id == id);
   return (
     <div className="booked-service">
-      <p className="service-name">Booked Service Name</p>
+      <p className="title">Booked Service Name</p>
       <h1 className="service-name">{service?.name}</h1>
       <button className="checkout-button" onClick={() => navigate(`/checkout`)}>
         Proceed to Check Out

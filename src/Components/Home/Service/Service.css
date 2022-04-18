@@ -61,7 +61,7 @@
     font-size: 24px;
 }
 
-.card-container button {
+.card-container .service-btn {
     display: block;
     width: 100%;
     padding: 0;
@@ -80,7 +80,7 @@
     font-family: 'Lobster', cursive;
 }
 
-.card-container button:hover{
+.card-container .service-btn:hover{
     background: white;
     color: #A57982;
     box-shadow: none;
@@ -107,4 +107,7 @@
         align-items: center;
         justify-content: center;
     }
+    /* .card-container .image img{
+        width: 100%;
+    } */
 }

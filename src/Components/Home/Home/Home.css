@@ -1,0 +1,40 @@
+.title{
+    font-family: 'Lobster', cursive;
+    color: #A57982;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.show-more-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-btn{
+    align-items: center;
+    display: block;
+    width: 30%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    background: #A57982;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    font-family: 'Lobster', cursive;
+}
+
+.service-btn:hover{
+    background: white;
+    color: #A57982;
+    box-shadow: none;
+}

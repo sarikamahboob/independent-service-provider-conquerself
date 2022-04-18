@@ -1,0 +1,38 @@
+.service-detail{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-detail-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.service-detail-image img{
+    width: 700px;
+    border: 15px solid #ffe8e6;;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.service-detail-price{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    background-color: #632626;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+    .service-detail-image img{
+       width: 100%;
+    }
+   
+}

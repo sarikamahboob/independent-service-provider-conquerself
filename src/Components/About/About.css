@@ -1,0 +1,43 @@
+.about{
+    display: flex;
+    align-items: center;
+    gap: 40px
+}
+
+.about-me{
+    text-align: justify;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #AD8B73;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.about-section{
+   
+}
+
+.about-img{
+    display: flex;
+    align-items: center;
+}
+
+.about-img img{
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-img img{
+        width:100%;
+    }
+    
+}

@@ -53,10 +53,10 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to="/contactus"
+                to="/contact"
                 className={({ isActive }) => (isActive ? "active" : "nav-link")}
               >
-                Contact Us
+                Contact
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
