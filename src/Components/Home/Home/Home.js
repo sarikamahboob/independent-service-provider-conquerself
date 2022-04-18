@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ServiceContext } from "../../../App";
+import FAQ from "../../FAQ/FAQ";
 import Banner from "../Banner/Banner";
 import Service from "../Service/Service";
 import Services from "../Services/Services";
@@ -30,6 +31,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <FAQ />
     </div>
   );
 };

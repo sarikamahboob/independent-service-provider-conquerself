@@ -20,7 +20,7 @@ const SignUp = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
-    const confirmPassword = event.target.confirmPassword.value;
+    // const confirmPassword = event.target.confirmPassword.value;
     createUserWithEmailAndPassword(email, password);
   };
 
@@ -57,13 +57,13 @@ const SignUp = () => {
           placeholder="Password"
           required
         />
-        <input
+        {/* <input
           type="password"
           name="confirmPassword"
           id=""
           placeholder="Confirm Password"
           required
-        />
+        /> */}
         <button>Sign Up</button>
       </form>
 

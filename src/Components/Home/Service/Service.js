@@ -1,18 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "./Service.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Service = ({ service }) => {
   // const [services, setServices] = useContext(ServiceContext);
   const { _id, name, price, description, image } = service;
   const navigate = useNavigate();
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
-      <div className="card-container">
+      <div className="card-container" data-aos="fade-right">
         <div className="image">
-          <img src={image} alt="" fluid />
+          <img src={image} alt="" />
         </div>
         <h1>{name}</h1>
 

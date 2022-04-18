@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Accordion } from "react-bootstrap";
 import "./Blogs.css";
 
@@ -6,7 +6,7 @@ const Blogs = () => {
   return (
     <div className="container">
       <div className="blog-container">
-        <div className="blog-div">
+        <div className="blog-div" data-aos="zoom-in-down">
           <h1 className="blog-title">
             <span>Question-1:</span> Difference between authorization and
             authentication?
@@ -46,7 +46,7 @@ const Blogs = () => {
             </li>
           </p>
         </div>
-        <div className="blog-div">
+        <div className="blog-div" data-aos="zoom-in-down">
           <h1 className="blog-title">
             <span>Question-2:</span> Why are you using firebase? What other
             options do you have to implement authentication?
@@ -79,7 +79,7 @@ const Blogs = () => {
             <li>JSON Web Token</li>
           </p>
         </div>
-        <div className="blog-div">
+        <div className="blog-div" data-aos="zoom-in-down">
           <h1 className="blog-title">
             <span>Question-3:</span> What other services does firebase provide
             other than authentication

@@ -4,7 +4,6 @@
 }
 
 .footer-section{
-    margin-bottom: 0px;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     grid-gap: 40px;
@@ -84,6 +83,16 @@
     margin-right: 10px;
 }
 
+.copyright{
+    background-color: #632626;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 576px) {
     .footer-section{
         display: flex;
@@ -101,6 +110,21 @@
     }
     .about-me-footer{
         padding: 10px
+    }
+    .footer-div.special-div{
+        margin-left: 0px;
+    }
+    
+    .footer-div.special-div2{
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .footer-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
     .footer-div.special-div{
         margin-left: 0px;

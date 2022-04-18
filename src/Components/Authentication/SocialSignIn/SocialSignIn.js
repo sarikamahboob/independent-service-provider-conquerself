@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  useSignInWithFacebook,
   useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -17,19 +18,25 @@ const SocialSignIn = () => {
     useSignInWithGoogle(auth);
   const [signInWithGithub, githubUser, githubLoading, githubError] =
     useSignInWithGithub(auth);
+  const [signInWithFacebook, facebookUser, facebookLoading, facebookError] =
+    useSignInWithFacebook(auth);
   let errorElement;
   let from = location.state?.from?.pathname || "/";
-  if (googleUser || githubUser) {
+
+  if (googleUser || githubUser || facebookUser) {
     navigate(from, { replace: true });
   }
-  if (googleLoading || githubLoading) {
+
+  if (googleLoading || githubLoading || facebookLoading) {
     <Loading />;
   }
-  if (googleError || githubError) {
+
+  if (googleError || githubError || facebookError) {
     errorElement = (
       <div>
         <p className="text-danger">
-          Error: {googleError.message} {githubError.message}
+          Error: {googleError?.message} {githubError?.message}
+          {facebookError?.message}
         </p>
       </div>
     );
@@ -44,18 +51,18 @@ const SocialSignIn = () => {
           Sign Up with Google
         </button>
 
-        <button>
+        <button onClick={() => signInWithFacebook()}>
           <span>
             <BsFacebook />
           </span>
-          Sign Up with Google
+          Sign Up with Facebook
         </button>
 
         <button onClick={() => signInWithGithub()}>
           <span>
             <BsGithub />
           </span>
-          Sign Up with Google
+          Sign Up with Github
         </button>
       </div>
       {errorElement}

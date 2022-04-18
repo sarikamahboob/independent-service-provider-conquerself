@@ -1,0 +1,24 @@
+.faq-section{
+    margin-top: 50px;
+}
+
+button.accordion-button{
+    background-color: #ffeff2;
+    color: #632626;
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+button.accordion-button:focus{
+    background-color: #632626;
+    color: white;
+}
+
+.accordion-body{
+    text-align: justify;
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #AD8B73;
+}

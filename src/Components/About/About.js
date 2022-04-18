@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <h1 className="title">About Me</h1>
       <div className="container about">
-        <div className="about-section">
+        <div className="about-section" data-aos="fade-right">
           <p className="about-me">
             Assalamualaikum. My name is Sarika Mahboob. My born and brought up
             is in Dhaka. I completed my school and college as a Science student
@@ -34,7 +34,7 @@ const About = () => {
             me in your prayers. Thank You.
           </p>
         </div>
-        <div className="about-img">
+        <div className="about-img" data-aos="fade-left">
           <img src={about} alt="" />
         </div>
       </div>

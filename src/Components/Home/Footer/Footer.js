@@ -74,6 +74,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="copyright">
+        <p>copyright © 2022 Sarika Maboob </p>
+      </div>
     </div>
   );
 };
