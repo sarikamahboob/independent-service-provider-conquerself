@@ -14,7 +14,6 @@
 }
 
 .checkout-button{
-    display: block;
     width: 500px;
     padding: 0;
     border: none;
@@ -37,4 +36,25 @@
     color: #CE49BF;
     background: #fff8f7;
     box-shadow: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .checkout-button{
+        width: 300px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        color: white;
+        font-size: 20px;
+        padding: 8px;
+        background: #CE49BF;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+        transition: 0.5s;
+        font-family: 'Lobster', cursive;
+    }
+    
 }

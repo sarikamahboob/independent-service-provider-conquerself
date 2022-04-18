@@ -15,10 +15,20 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 30px;
     width: 500px;
-    
     align-items: center;
+    transition: 0.5s ;
 }
-.card-container:hover 
+.card-container:hover {
+    background-color: #ffe7eb;
+}
+
+.card-container:hover .service-btn{
+    box-shadow: none;
+}
+
+.card-container:hover p{
+    color: #632626;
+}
 
 .card-container .image{
     width: 100%;
