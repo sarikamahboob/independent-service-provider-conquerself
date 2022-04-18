@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
+import { MdEmail } from "react-icons/md";
+import { BsFillPhoneFill } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -8,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container footer-section">
         <div className="footer-div">
-          <h1 className="footer-title">A Little Something About Me</h1>
+          <h1 className="footer-title">About Me</h1>
           <p className="about-me-footer">
             Assalamualaikum. My name is Sarika Mahboob. My born and brought up
             is in Dhaka. I completed my school and college as a Science student
@@ -51,6 +54,24 @@ const Footer = () => {
         </div>
         <div className="footer-div">
           <h1 className="footer-title">Contact Us</h1>
+          <div className="contact-div">
+            <span className="icon">
+              <MdEmail />
+            </span>
+            <span>sarika@gmail.com</span>
+          </div>
+          <div className="contact-div">
+            <span className="icon">
+              <BsFillPhoneFill />
+            </span>
+            <span>01700000000</span>
+          </div>
+          <div className="contact-div">
+            <span className="icon">
+              <FaMapMarkerAlt />
+            </span>
+            <span>Pallabi, Mirpur, Dhaka 1216</span>
+          </div>
         </div>
       </div>
     </div>

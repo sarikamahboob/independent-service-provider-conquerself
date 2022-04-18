@@ -43,13 +43,26 @@ const SignUp = () => {
       <h1 className="form-title">SignUp</h1>
       <form className="form" onSubmit={handleSignUp}>
         <input type="text" name="name" id="" placeholder="Enter Your Name" />
-        <input type="email" name="email" id="" placeholder="Enter Your Email" />
-        <input type="password" name="password" id="" placeholder="Password" />
+        <input
+          type="email"
+          name="email"
+          id=""
+          placeholder="Enter Your Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id=""
+          placeholder="Password"
+          required
+        />
         <input
           type="password"
           name="confirmPassword"
           id=""
           placeholder="Confirm Password"
+          required
         />
         <button>Sign Up</button>
       </form>

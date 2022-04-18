@@ -37,7 +37,7 @@
     color: #AD8B73;
 }
 .about-me-footer span{
-    color: #CE49BF;
+   color: #CE49BF;
     font-weight: 900;
     cursor: pointer;
 }
@@ -56,11 +56,32 @@
 
 .footer-links a{
     text-decoration: none;
-    color: #CE49BF;
+    color: #AD8B73;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.footer-links a:hover{
+    color: #CE49BF;
+}
+.contact-div {
+    margin-bottom: 20px;
+}
+
+.contact-div span{
+    text-align: justify;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #AD8B73;
+}
+.contact-div .icon{
+    color: #632626;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -80,5 +101,12 @@
     }
     .about-me-footer{
         padding: 10px
+    }
+    .footer-div.special-div{
+        margin-left: 0px;
+    }
+    
+    .footer-div.special-div2{
+        margin-left: 0px;
     }
 }

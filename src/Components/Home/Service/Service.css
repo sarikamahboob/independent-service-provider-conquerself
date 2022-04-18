@@ -55,10 +55,15 @@
 }
 
 .card-container h5{
-    color: #CE49BF;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
+    width: 150px;
+    background-color: #632626;
+    padding: 10px;
+    text-decoration: center;
+    border-radius: 20px;
 }
 
 .card-container .service-btn {

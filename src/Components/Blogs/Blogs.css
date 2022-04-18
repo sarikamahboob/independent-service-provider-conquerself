@@ -1,0 +1,36 @@
+.blog-container{
+    margin-top: 60px;
+}
+
+.blog-title{
+    color: #A57982 !important;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+
+.blog-div{
+    background-color: #ffe8e6;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+}
+
+.blog-div > p >span{
+    color: #632626;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.blog-div > p {
+    color: #1C0A00;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-title span{
+    color: #632626;
+}

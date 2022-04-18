@@ -67,8 +67,15 @@ const SignIn = () => {
           name="email"
           id=""
           placeholder="Enter Your Email"
+          required
         />
-        <input type="password" name="password" id="" placeholder="Password" />
+        <input
+          type="password"
+          name="password"
+          id=""
+          placeholder="Password"
+          required
+        />
 
         <button>Sign In</button>
       </form>
