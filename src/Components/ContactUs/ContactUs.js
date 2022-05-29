@@ -26,7 +26,7 @@ const ContactUs = () => {
             <span className="icon">
               <FaMapMarkerAlt />
             </span>
-            <span>Pallabi, Mirpur, Dhaka 1216</span>
+            <span> Mirpur, Dhaka 1216</span>
           </div>
         </div>
         <div data-aos="fade-right">
